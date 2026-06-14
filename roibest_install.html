@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Wave999</title>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta name="app-version" content="1780370801698">
+    
+    <script>
+        if (window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true) {
+            window.location.replace("https://www.wave999.com/pages/redirect/redirect?inviteCode=MTM5");
+        }
+    </script>
+
+    <style>body {transition: opacity ease-in 0.2s; } body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } </style>
+    
+    <link id="favicon" href="logo.png" rel="icon">
+    <link id="favicon_ios" href="logo.png" rel="apple-touch-icon">
+    
+    <link rel="manifest" href="manifest.json">
+    <link href="./__roibest_install_files/install-0b51e99b4b72a9dd1055.css" rel="stylesheet">
+
+    <style>
+        /* The container needs relative positioning so the new fixed header doesn't overlap it on load */
+        .container {
+            position: relative;
+            margin-top: 55px !important; /* Makes room for the frozen top bar */
+            padding-top: 0 !important;
+        }
+
+        /* NEW: The "Freeze Logo" Top Banner (Play Store style) */
+        .frozen-top-banner {
+            position: fixed !important; /* FREEZES it to the top */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 55px; /* Official height for that header style */
+            background-color: #ffffff !important;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #dadce0 !important; /* Clean gray bottom line */
+            z-index: 9999990; /* Puts it above all content, but under the final popup */
+        }
+        
+        .frozen-top-banner-logo {
+            height: 24px; /* Perfectly sizes the play logo from image_4.png */
+        }
+
+        /* Stack logo and app info below the frozen bar */
+        .header {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 12px !important;
+            padding-top: 20px !important; /* Adds smooth padding on content start */
+        }
+        
+        .header__icon {
+            margin-right: 0 !important;
+        }
+        
+        .header__info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        /* User repaired text style (kept JILI context) */
+        .header__info-publisher {
+            color: #5f6368;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Verified by play protect text */
+        .header__info-play {
+             color: #5f6368 !important;
+             font-size: 13px !important;
+             margin: 8px 0 0 0 !important;
+             font-weight: 400 !important;
+        }
+
+        /* Keep user's green button color */
+        .install-btn.shiny-btn {
+            background-color: #01875f !important;
+            background-image: none !important;
+            box-shadow: 0 1px 2px rgba(60,64,67,0.30) !important;
+            height: 48px !important;
+            color: white !important;
+            font-size: 16px !important;
+            font-weight: bold !important;
+        }
+        
+        /* Content inside the button */
+        .install-btn__ing__rapid {
+             display: flex !important;
+             justify-content: center !important;
+             align-items: center !important;
+             width: 100% !important;
+             height: 100% !important;
+        }
+        
+        /* Popup button styles */
+        .install-now__actived__btn {
+             background-color: #01875f !important;
+             border-radius: 20px !important;
+             padding: 10px 24px !important;
+             color: white !important;
+             font-weight: bold !important;
+             font-size: 14px !important;
+        }
+        
+        /* Popup active text styles */
+        .install-now__actived__tag {
+             color: #01875f !important;
+             font-weight: bold !important;
+        }
+        
+        /* Clean uporiginal countdown */
+        .install-btn__ing__countdown {
+             display: none !important;
+        }
+        
+        /* Rotate animation for loading spinner */
+        @keyframes clean-rotate { 100% { transform: rotate(360deg); } }
+    </style>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('__roibest_sw.js');
+                navigator.serviceWorker.register('notification-sw.js');
+            });
+        }
+    </script>
+</head>
+<body style="margin: 0; padding: 0;">
+
+    <div class="frozen-top-banner">
+        <img src="image_4.png" alt="Google Play" class="frozen-top-banner-logo">
+    </div>
+
+    <div class="container" data-type="INSTALL" id="container">
+        
+        <div class="header">
+            <div class="header__icon">
+                <img class="header__icon--img" src="./__roibest_install_files/c2fc9d04559430e207aa0fe7018e1e9c.png" alt="" style="width: 74px; height: 74px; aspect-ratio: 1 / 1; border-radius: 12px; box-shadow: 0 1px 2px rgba(60,64,67,0.30);">
+            </div>
+            <div class="header__info">
+                <div class="header__info-title">
+                    <span style="font-size:22px; font-weight:bold; color:black;">WAVE999</span> 
+                    <img alt="" class="header__info-title-tag" loading="lazy" src="./__roibest_install_files/ic_tag-132e314a1fc198d5b943.png" style="vertical-align: middle;">
+                </div>
+                
+                <p class="header__info-publisher">ဆာဗာမထိန်း ဝေ့ကိုးသုံးလုံးဂိမ်း ကို သူငယ်ချင်း များနှင့် မျှဝေပြီး အတန်ဆုံး ဘောနပ်စ်များ ရယူလိုက်ပါ။</p>
+                
+                <p class="header__info-play"><img alt="" class="ic_dun" loading="lazy" src="./__roibest_install_files/ic_dun-175b2705681df4e189f2.png" style="vertical-align: text-bottom;"> Verified by Play Protect</p>
+            </div>
+        </div>
+
+        <div class="info">
+            <div class="info__view__wrap">
+                <div class="info__view">
+                    <div class="info__view-value">4.9 <img alt="" class="ic_x" loading="lazy" src="./__roibest_install_files/ic_x-5cfcc16318512e841386.png"></div>
+                    <div class="info__view-label">238K reviews</div>
+                </div>
+                <div class="info__view">
+                    <div class="info__view-value">7M +</div>
+                    <div class="info__view-label">Downloads</div>
+                </div>
+                <div class="info__view">
+                    <img alt="" class="info__view-choice" src="./__roibest_install_files/ic_editors_choice-90a4c40deaa30c9e44e2.png" style="opacity: 1;">
+                    <div class="info__view-label">Editors' Choice</div>
+                </div>
+                <div class="info__view">
+                    <img class="info__view-icon" src="./__roibest_install_files/ic_rated_for_18-843b90451b3bb1c9b656.png">
+                    <div class="info__view-label">Rated for 18+</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="install-btn shiny-btn" style="cursor: pointer;" onclick="openCustomPopup()">
+            <div class="install-btn__ing" id="btn-rapid-state" style="pointer-events: none;">
+                <div class="install-btn__ing__rapid">
+                    <span>Install</span>
+                </div>
+            </div>
+            <div class="install-btn__install install-btn__view" id="btn-open-state" style="display: none; pointer-events: none; justify-content: center; align-items: center; width: 100%;">
+                <span style="font-weight:bold; font-size:16px; color:white;">Open</span>
+            </div>
+        </div>
+
+        <div class="share-row"><div class="share-row__item"><img alt="" style="width: 17px; height: 20px" src="./__roibest_install_files/ic_share-348e8e1e95f36c915880.png"><div>Share</div></div><div class="share-row__item"><img alt="" src="./__roibest_install_files/ic_addwishlist-2a33e12e8e5ed5501dfc.png"><div>Add to wishlist</div></div></div>
+        
+        <div class="img-scroll">
+            <div class="img-scroll__list">
+                <div class="img-scroll__view"><img loading="lazy" alt="" src="./__roibest_install_files/0d109e96ba2234a04f316045e967042a.gif" style="height: 224px;"></div>
+                <div class="img-scroll__view"><img loading="lazy" alt="" src="./__roibest_install_files/6030709a0e8dc125f26b9dda2b21e786.gif" style="height: 224px;"></div>
+                <div class="img-scroll__view"><img loading="lazy" alt="" src="./__roibest_install_files/da7a133b8cee5bbac153db4c3ea45300.gif" style="height: 224px;"></div>
+                <div class="img-scroll__view"><img loading="lazy" alt="" src="./__roibest_install_files/5bf98b603d368e18e11af4f1776930aa.gif" style="height: 224px;"></div>
+            </div>
+        </div>
+        
+        <div class="description"><div class="description__title">About this app</div><img alt="" class="description__right-arrow" src="./__roibest_install_files/ic_arrow_right-ecd0952f3569bde7f2bd.png"><div class="description__content">🔥🌟🌟WAVE999.COM🌟🌟🌟4.9၊ ကြော်ငြာများမပါ၊ ချောမွေ့သောကစားနည်း၊ အာမခံအပြည့်၊ ငွေထုတ်မြေန်ဆန် မှန်ကန်✅ 
+ဆာဗာမထိန်း Wave999 ဂိမ်း ဆိုက်မှ ကြိုဆိုပါတယ်။
+ငွေသွင်းတိုင်းရတဲ့ဘောနပ်လေးယူဖို့မမေ့နဲ့နော်။  ထိပ်တန်းဂိမ်း. စလော့. ငါးဂိမ်း. ကျွဲဂိမ်း ၊ ဝက်ဂိမ်း ၊ Arcade. Bingo. Casino. အသစ်. လူကြိုက်များဂိမ်း. Three Crazy Piggies. Super Ace. 3 Charge Buffalo စသည့် လူကြိုက်များဂိမ်း အစုံအလင်ကို အာတီပီအမြင့်ဆုံးပေးထားပါတယ်</div></div>
+
+        <div class="comments" id="rb-comment">
+            <div class="comments__title">Ratings and reviews</div>
+            <div class="comments__tips">Ratings and reviews are verified from people who use the same type of device that you use</div>
+            
+            <div class="comments__type">
+                <div class="comments__type-item comments__type-active">
+                    <img loading="lazy" src="./__roibest_install_files/ic_phone-7de36d2d9891b9ea7367.png" alt="">
+                    <span>Phone</span>
+                </div>
+            </div>
+            
+            <div class="comments__scoring">
+              <div class="comments__scoring-num">
+                <div class="comments__scoring-points">4.9</div>
+                <div class="comments__scoring-star"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 14px; height: 14px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 14px; height: 14px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 14px; height: 14px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 14px; height: 14px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_half_star-31c3e8b90b3a56ee176a.png" style="width: 14px; height: 14px; margin-right: 2px;"></div>
+                <div class="comments__scoring-people">238495</div>
+              </div>
+              <div class="comments__scoring-content">
+                <div class="comments__scoring-item">5<div class="progress"><div class="progress-bar" style="width: 100%;"></div></div></div>
+                <div class="comments__scoring-item">4<div class="progress"><div class="progress-bar" style="width: 10%;"></div></div></div>
+                <div class="comments__scoring-item">3<div class="progress"><div class="progress-bar" style="width: 0%;"></div></div></div>
+                <div class="comments__scoring-item">2<div class="progress"><div class="progress-bar" style="width: 0%;"></div></div></div>
+                <div class="comments__scoring-item">1<div class="progress"><div class="progress-bar" style="width: 0%;"></div></div></div>
+              </div>
+            </div>
+            
+            <div id="rb-comment-list">
+                <div class="comments__list-item">
+                   <div class="comments__list-header">
+                       <img loading="lazy" class="comments__list-avatar" src="./__roibest_install_files/b7350ee0ebdf703476612d3c1e17fa15.jpeg" alt="">
+                       <div class="comments__list-name">မြတ်စု</div>
+                   </div>
+                   <div class="comments__list-stars"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 11px; height: 11px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 11px; height: 11px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 11px; height: 11px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 11px; height: 11px; margin-right: 2px;"><img class="star" alt="" src="./__roibest_install_files/ic_full_star-f625888302981fac22a1.png" style="width: 11px; height: 11px; margin-right: 2px;"><span>May 4, 2026</span></div>
+                   <div class="comments__list-detail">WAVE999 ရဲ့ ဒီဇိုင်း အပြင်အဆင် လှတယ်၊ slotဂိမ်းတွေ အရမ်းမိုက် ၊ အထူးအနေနဲ့  ၀က်သုံးကောင် ဂိမ်း ၊ ကျွဲဂိမ်း  တွေ အများဆုံးဆော့ဖြစ်တယ်  ပထမဆုံး 5000 နဲ့ ငွေ သွင်းကစားတာ 15 သိန်း maxwin လို့ ခုထိဆော့ ဖြစ်တုန်း၊ </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clean-popup-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.6); z-index: 9999998;" onclick="closeCustomPopup()"></div>
+    
+    <div id="clean-popup-box" style="display: none; position: fixed; bottom: 0; left: 0; width: 100vw; background: #ffffff; border-radius: 20px 20px 0 0; z-index: 9999999; padding: 24px; box-sizing: border-box; font-family: sans-serif; box-shadow: 0 -4px 15px rgba(0,0,0,0.1);">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+            <div style="display: flex; align-items: center; font-size: 18px; font-weight: bold; color: #333;">
+                <img src="./__roibest_install_files/c2fc9d04559430e207aa0fe7018e1e9c.png" style="width: 36px; height: 36px; border-radius: 8px; margin-right: 12px;">
+                Install
+            </div>
+            <div style="display: flex; align-items: center; font-size: 13px; color: #666;">
+                <img src="./__roibest_install_files/ic_lighting-0138c2e79ee99b73f38c.png" style="width: 12px; margin-right: 4px;">
+                ယခု ဆာဗာလွတ်ချိန်အတွင်း အကောင့် ဖွင့် ကစားလိုက်ပါ
+            </div>
+        </div>
+
+        <div style="background: #f8f9fa; border-radius: 12px; padding: 16px;">
+            
+            <div id="clean-popup-active" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="install-now__actived__tag" style="display: flex; align-items: center; font-weight: bold; font-size: 15px;">
+                    <img src="./__roibest_install_files/ic_actived-9a2f00d9a044599ec613.png" style="width: 18px; margin-right: 8px;">
+                    Active
+                </div>
+                <div class="install-now__actived__btn" style="color: #fff; padding: 10px 24px; border-radius: 20px; font-weight: bold; font-size: 14px; cursor: pointer;" onclick="triggerNativeInstall()">
+                    Install Now
+                </div>
+            </div>
+
+            <div id="clean-popup-loading" style="display: none; align-items: center;">
+                <svg viewBox="25 25 50 50" style="width:28px; height:28px; animation: clean-rotate 2s linear infinite; margin-right: 12px;">
+                    <circle cx="50" cy="50" fill="none" r="20" stroke="#01875f" stroke-width="4" stroke-dasharray="1, 200" stroke-dashoffset="0"></circle>
+                </svg>
+                <span id="clean-countdown-text" style="font-weight: bold; color: #333; font-size: 15px;">Downloading within 10 s</span>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        const GAME_URL = "https://www.wave999.com/pages/redirect/redirect?inviteCode=MTM5";
+        let deferredPrompt;
+
+        // 1. Capture the Chrome native install event
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+        });
+
+        // 2. Open the clean popup
+        function openCustomPopup() {
+            const openBtn = document.getElementById('btn-open-state');
+            if (openBtn && openBtn.style.display === 'flex') {
+                window.location.replace(GAME_URL);
+                return;
+            }
+            
+            document.getElementById('clean-popup-overlay').style.display = 'block';
+            document.getElementById('clean-popup-box').style.display = 'block';
+            document.getElementById('clean-popup-active').style.display = 'flex';
+            document.getElementById('clean-popup-loading').style.display = 'none';
+        }
+
+        // 3. Close the clean popup
+        function closeCustomPopup() {
+            document.getElementById('clean-popup-overlay').style.display = 'none';
+            document.getElementById('clean-popup-box').style.display = 'none';
+        }
+
+        // 4. Trigger the Chrome Prompt when "Install Now" is clicked
+        function triggerNativeInstall() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then((choiceResult) => {
+                    if (choiceResult.outcome === 'accepted') {
+                        startFakeDownload();
+                    } else {
+                        closeCustomPopup();
+                    }
+                    deferredPrompt = null;
+                });
+            } else {
+                // If Chrome blocks prompt or is in an iframe (like tiiny.host), run animation anyway
+                startFakeDownload();
+            }
+        }
+
+        // 5. Run the 10-second visual animation
+        function startFakeDownload() {
+            document.getElementById('clean-popup-active').style.display = 'none';
+            document.getElementById('clean-popup-loading').style.display = 'flex';
+
+            let timeLeft = 10;
+            const textEl = document.getElementById('clean-countdown-text');
+            textEl.innerText = `Downloading within ${timeLeft} s`;
+
+            const timer = setInterval(() => {
+                timeLeft -= 1;
+                textEl.innerText = `Downloading within ${timeLeft} s`;
+
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    closeCustomPopup();
+                    
+                    // Switch green button to "Open"
+                    document.getElementById('btn-rapid-state').style.display = 'none';
+                    document.getElementById('btn-open-state').style.display = 'flex';
+                }
+            }, 1000);
+        }
+
+        // 6. Listen for successful install completion
+        window.addEventListener('appinstalled', () => {
+            document.getElementById('btn-rapid-state').style.display = 'none';
+            document.getElementById('btn-open-state').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

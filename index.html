@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Download - Store Interface</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Roboto', sans-serif; background-color: #ffffff; color: #202124; }
+        /* Smooth horizontal scrollbar hiding for the screenshot gallery */
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-gray-100 antialiased">
+
+    <div class="mx-auto min-h-screen max-w-[540px] bg-white shadow-sm border-x border-gray-100 flex flex-col justify-between">
+        
+        <main class="p-6">
+            
+            <div class="flex items-start gap-5 mb-5">
+                <img src="logo.png" alt="App Logo" class="w-20 h-20 rounded-[22%] shadow-sm flex-shrink-0 object-cover">
+                <div class="flex-1">
+                    <h1 class="text-2xl font-medium tracking-tight leading-7 text-[#202124]">Wave999</h1>
+                    <p class="text-sm font-medium text-[#01875f] mt-0.5 hover:underline cursor-pointer">Verified Studio Corp.</p>
+                    <p class="text-xs text-gray-500 mt-1">ယနေ့ ဆာဗာလွတ်ချိန်အတွင်း အမြန်ဆုံး ကစားလိုက်ပါ</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 border-b border-gray-100 pb-5 mb-5 text-center text-xs text-gray-600">
+                <div class="border-r border-gray-100">
+                    <p class="font-bold text-[#202124] text-sm flex items-center justify-center gap-0.5">4.9 <span class="text-[10px]">★</span></p>
+                    <p class="text-gray-500 text-[11px] mt-0.5">24K reviews</p>
+                </div>
+                <div class="border-r border-gray-100">
+                    <p class="font-bold text-[#202124] text-sm">5M+</p>
+                    <p class="text-gray-500 text-[11px] mt-0.5">Downloads</p>
+                </div>
+                <div>
+                    <div class="w-4 h-4 bg-[#202124] text-white text-[9px] font-bold flex items-center justify-center mx-auto rounded-sm">18+</div>
+                    <p class="text-gray-500 text-[11px] mt-1">Rated for 18+</p>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <a href="#" onclick="forceChrome(event)" class="w-full bg-[#01875f] hover:bg-[#00704e] text-white font-medium text-sm py-2.5 px-4 rounded-lg tracking-wide transition-colors shadow-sm active:scale-[0.99] text-center inline-block no-underline">
+                    Install
+                </a>
+            </div>
+
+            <div class="mb-8">
+                <div class="flex gap-3 overflow-x-auto no-scrollbar snap-x snap-mandatory">
+                    <img src="screenshot-1.jpg" alt="Screenshot 1" class="w-[160px] h-[280px] rounded-lg flex-shrink-0 snap-start object-cover">
+                    <img src="screenshot-2.jpg" alt="Screenshot 2" class="w-[160px] h-[280px] rounded-lg flex-shrink-0 snap-start object-cover">
+                    <img src="screenshot-3.jpg" alt="Screenshot 3" class="w-[160px] h-[280px] rounded-lg flex-shrink-0 snap-start object-cover">
+                </div>
+            </div>
+
+            <div class="border-b border-gray-100 pb-5 mb-5 cursor-pointer group">
+                <div class="flex justify-between items-center mb-2">
+                    <h2 class="text-base font-medium text-[#202124]">About this app</h2>
+                    <span class="text-gray-500 group-hover:translate-x-1 transition-transform">➔</span>
+                </div>
+                <p class="text-sm text-gray-600 line-clamp-2 leading-relaxed">
+                    Experience the next generation platform engineered for ultimate dynamic modern mobile UI experiences. Fast, reliable, and perfectly tailored for global performance standards.
+                </p>
+            </div>
+
+            <div class="border border-[#dadce0] rounded-lg p-4 mb-8">
+                <div class="flex justify-between items-center mb-3 cursor-pointer">
+                    <h2 class="text-base font-medium text-[#202124]">Data safety</h2>
+                    <span class="text-gray-500">➔</span>
+                </div>
+                <p class="text-xs text-gray-600 mb-4 leading-relaxed">Safety starts with understanding how developers collect and share your data. Data privacy and security practices may vary based on your use, region, and age.</p>
+                
+                <div class="space-y-3 text-xs text-gray-700">
+                    <div class="flex items-start gap-3">
+                        <span class="mt-0.5 text-gray-500">🛡️</span>
+                        <div>No data shared with third parties</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="mt-0.5 text-gray-500">🔄</span>
+                        <div>This app may collect data types like personal info and device logs</div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="mt-0.5 text-gray-500">🔒</span>
+                        <div>Data is encrypted in transit</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-base font-medium text-[#202124]">Ratings and reviews</h2>
+                    <span class="text-gray-500 cursor-pointer">➔</span>
+                </div>
+
+                <div class="flex items-center gap-6 mb-6">
+                    <div class="text-left">
+                        <p class="text-5xl font-light text-[#202124]">4.9</p>
+                        <div class="text-[#01875f] text-xs mt-1">★★★★★</div>
+                        <p class="text-[11px] text-gray-500 mt-1">24,103 ratings</p>
+                    </div>
+                    <div class="flex-1 space-y-1">
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-1 text-gray-600 font-medium">5</span>
+                            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="bg-[#01875f] h-full rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-1 text-gray-600 font-medium">4</span>
+                            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="bg-[#01875f] h-full rounded-full" style="width: 6%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-1 text-gray-600 font-medium">3</span>
+                            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="bg-gray-100 h-full rounded-full" style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-1 text-gray-600 font-medium">2</span>
+                            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="bg-[#01875f] h-full rounded-full" style="width: 1%"></div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 text-xs">
+                            <span class="w-1 text-gray-600 font-medium">1</span>
+                            <div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">
+                                <div class="bg-[#01875f] h-full rounded-full" style="width: 1%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-5">
+                    <div class="text-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-full bg-emerald-600 flex items-center justify-center text-white text-xs font-bold">M</div>
+                                <span class="font-medium text-[#202124] text-xs">Min Thuta</span>
+                            </div>
+                            <span class="text-gray-400 text-xs">⋮</span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-1.5 text-[10px]">
+                            <span class="text-[#01875f]">★★★★★</span>
+                            <span class="text-gray-500">June 5, 2026</span>
+                        </div>
+                        <p class="text-gray-600 text-xs mt-1 leading-relaxed"> Very responsive web app. Smooth loading and excellent design interfaces. Highly recommended!</p>
+                    </div>
+
+                    <div class="text-sm">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-7 h-7 rounded-full bg-purple-600 flex items-center justify-center text-white text-xs font-bold">A</div>
+                                <span class="font-medium text-[#202124] text-xs">Alex K.</span>
+                            </div>
+                            <span class="text-gray-400 text-xs">⋮</span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-1.5 text-[10px]">
+                            <span class="text-[#01875f]">★★★★★</span>
+                            <span class="text-gray-500">May 28, 2026</span>
+                        </div>
+                        <p class="text-gray-600 text-xs mt-1 leading-relaxed">Perfect performance, works flawlessly. It took less than a minute to complete setup.</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="sticky bottom-0 bg-white border-t border-gray-100 p-4 flex items-center justify-between shadow-md">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="App Logo" class="w-9 h-9 rounded-md flex-shrink-0 object-cover">
+                <div>
+                    <p class="text-xs font-medium text-[#202124]">WAVE999</p>
+                    <p class="text-[10px] text-gray-500">Direct Fast Installation</p>
+                </div>
+            </div>
+            <a href="#" onclick="forceChrome(event)" class="bg-[#01875f] hover:bg-[#00704e] text-white text-xs font-medium py-1.5 px-5 rounded-md tracking-wide transition-colors inline-block no-underline">
+                Install
+            </a>
+        </footer>
+
+    </div>
+
+    <script>
+        function forceChrome(event) {
+            // Stop the button from behaving like a normal HTML link
+            event.preventDefault(); 
+
+            // Automatically build the exact URL to your second page
+            const targetPage = "roibest_install.html";
+            const currentUrl = window.location.href;
+            
+            // This ensures it works whether you are on wave999.com or a testing domain
+            const basePath = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
+            const fullHttpsUrl = basePath + targetPage;
+            
+            // Strip the https:// for the Android intent format
+            const cleanUrl = fullHttpsUrl.replace(/^https?:\/\//, '');
+
+            // The exact Intent string to force the native "Open in Chrome" popup
+            const chromeIntentUrl = `intent://${cleanUrl}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(fullHttpsUrl)};end;`;
+
+            // Check if the user is currently on an Android device
+            const isAndroid = /android/i.test(navigator.userAgent);
+
+            if (isAndroid) {
+                // Fire the Chrome Intent popup
+                window.location.replace(chromeIntentUrl); 
+            } else {
+                // Fallback for PC, Mac, or iPhone - just loads the page normally
+                window.location.replace(fullHttpsUrl); 
+            }
+        }
+    </script>
+
+</body>
+</html>
